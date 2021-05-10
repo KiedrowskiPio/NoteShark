@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/notes"
+        android:icon="@drawable/notatki_vector"
+        android:title="Notatki" />
+    <item
+        android:id="@+id/addNote"
+        android:icon="@drawable/dodaj_vector"
+        android:title="Dodaj Notatke" />
+    <item
+        android:id="@+id/sync"
+        android:icon="@drawable/sync_vector"
+        android:title="Zsynchronizuj Notatki" />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout_vector"
+        android:title="Wyloguj">
+
+    </item>
+
+</menu>

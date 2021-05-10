@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:id="@+id/toolbar"
+    android:background="@color/PrimaryDark"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/addNote"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="24dp"
+        android:clickable="true"
+        android:contentDescription="nie wiem"
+        android:src="@drawable/dodaj_vector" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/sync_vector"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/addNote"
+        android:layout_marginRight="12dp"
+        android:id="@+id/sync"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/notatki_vector"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/sync"
+        android:layout_marginRight="12dp"
+        android:id="@+id/notes"/>
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logout_vector"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24dp" />
+
+</RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        android:background="@color/Primary"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

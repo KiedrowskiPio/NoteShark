@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "431620570493",
+    "project_id": "noteshark-ef612",
+    "storage_bucket": "noteshark-ef612.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431620570493:android:5e188cbfdb47fb161f6014",
+        "android_client_info": {
+          "package_name": "com.example.noteshark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431620570493-708oolp8tmg6phokrmt30kes1iu6n6h0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxC0jhskg2GV1GbDn0BVFpTWJefOwoo10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431620570493-708oolp8tmg6phokrmt30kes1iu6n6h0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

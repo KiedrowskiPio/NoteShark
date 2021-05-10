@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notes.AddNote">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.NoteShark.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/Accent"
+            app:popupTheme="@style/Theme.NoteShark.PopupOverlay"
+            app:subtitleTextColor="#FFFFFF">
+
+            <EditText
+                android:id="@+id/addNoteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Tytuł notatki"
+                android:inputType="textPersonName"
+                android:backgroundTint="@android:color/transparent"
+                android:textSize="22sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_add_note" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:adjustViewBounds="false"
+        android:background="#FFFFFF"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="add"
+        app:backgroundTint="@color/white"
+        app:maxImageSize="30dp"
+        app:rippleColor="#FFFFFF"
+        app:srcCompat="@drawable/zapisz_vector" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
